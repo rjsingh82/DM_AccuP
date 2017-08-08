@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+.name{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1,
+.name{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #5be6ff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*============= Links ======================*/
+a:link,
+a:visited {
+    color: #007bb6;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #5be6ff;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* -----------------------*/
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(Images/Main_BG.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+/* ======= navbar ====== */
+.navbar {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    font-size: 18px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+    padding: 8px 1.5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    border-bottom: 1.8px solid #000;
+
+}
